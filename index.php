@@ -37,6 +37,12 @@
 
     <!-- Custom Theme Style -->
     <link href="./build/css/custom.min.css" rel="stylesheet">
+        
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -73,7 +79,7 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Master <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="form.html">Guru</a></li>
+                      <li><a href="index.php?page=guru">Guru</a></li>
                       <li><a href="form_advanced.html">Mata Kuliah</a></li>
                     </ul>
                   </li>
