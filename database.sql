@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS guru;
 DROP TABLE IF EXISTS mapel;
 DROP TABLE IF EXISTS hasil;
 DROP TABLE IF EXISTS jadwal;
+DROP TABLE IF EXISTS obat;
 
 CREATE TABLE users (
     Id INT(5) PRIMARY KEY,
@@ -22,11 +23,6 @@ CREATE TABLE guru (
     alamat VARCHAR(100)
 );
 
-CREATE TABLE mapel (
-    id_mapel VARCHAR(5) PRIMARY KEY,
-    nm_mapel VARCHAR(50)
-);
-
 CREATE TABLE hasil (
     id_jadwal VARCHAR(5),
     id_mapel VARCHAR(5),
@@ -39,6 +35,20 @@ CREATE TABLE jadwal (
     ta_jadwal VARCHAR(10),
     sms_jadwal VARCHAR(15),
     nip VARCHAR(20)
+);
+
+CREATE TABLE mapel (
+    id_mapel VARCHAR(10) PRIMARY KEY,
+    nm_mapel VARCHAR(50),
+    kkm VARCHAR(15)
+);
+
+CREATE TABLE obat (
+    kd_obat VARCHAR(5) PRIMARY KEY,
+    nm_obat VARCHAR(50),
+    satuan VARCHAR(15),
+    jenis_obat VARCHAR(25),
+    stock INT(3)
 );
 
 INSERT INTO users VALUES

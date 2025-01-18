@@ -63,7 +63,7 @@
                   <h1>
                     <div class="profile_pic">
                       <img src="images/logo.webp" alt="..." class="img-circle profile_img">
-                    </div> HA Enterprice</h1>
+                    </div> !st Bravo Airlift Command</h1>
                   <p>ISB Atma Luhur</p>
                 </div>
               </div>
@@ -99,7 +99,7 @@
                 <br />
 
                 <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+                  <h1><i class="fa fa-paw"></i> Airlift Command</h1>
                   <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 4 template. Privacy and Terms</p>
                 </div>
               </div>

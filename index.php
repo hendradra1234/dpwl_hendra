@@ -51,7 +51,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Hendra Enterprice!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-plane"></i> <span>!st Bravo Airlift Command</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -80,7 +80,12 @@
                   <li><a><i class="fa fa-edit"></i> Master <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="index.php?page=guru">Guru</a></li>
-                      <li><a href="form_advanced.html">Mata Kuliah</a></li>
+                      <li><a href="index.php?page=mapel">Mata Kuliah</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i>Medical Unit <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index.php?page=obat">Medical Warehouse</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Transaksi <span class="fa fa-chevron-down"></span></a>
@@ -128,36 +133,23 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-          <!-- top tiles -->
-          <div class="row" style="display: inline-block;" >
-          <!-- <div class="row"> -->
+          <div class="content-wrapper">
+            <?php
+              if (isset($_GET['page'])) {
+                $halaman = $_GET['page'];
+              } else {
+                $halaman = "";
+              }
 
-            <div class="col-md-8 col-sm-8 ">
-              <div class="row">
-                <!-- End to do list -->
-                <div class="right_coll" role="main">
-                  <div class="content-wrapper">
-                    <?php
-                      if (isset($_GET['page'])) {
-                        $halaman =$_GET['page'];
-                      }else{
-                        $halaman="";
-                      }
-                      if ($halaman ==""){
-                        include "page/dashboard.php";
-                      }
-                      elseif(!file_exists("page/$halaman.php")) {
-                        echo "Halaman yang dicari tidak ditemukan";
-                      }else{
-                        include "page/$halaman.php";
-                      }
-                    ?>
-                  </div>
-                </div>
-                <!-- end of weather widget -->
-              </div>
-            </div>
-          <!-- </div> -->
+              if ($halaman == "") {
+                include "page/dashboard.php";
+              } elseif (!file_exists("page/$halaman.php")) {
+                echo "Halaman yang dicari tidak ditemukan";
+              } else {
+                include "page/$halaman.php";
+              }
+            ?>
+          </div>
         </div>
         </div>
         <!-- /page content -->
