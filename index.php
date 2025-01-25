@@ -34,15 +34,15 @@
     <link href="./vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
     <!-- bootstrap-daterangepicker -->
     <link href="./vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-
+    <link href="./build/js/jquery-1.11.1.min.js" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="./build/css/custom.min.css" rel="stylesheet">
-        
-    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
-    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link href="./vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -90,13 +90,13 @@
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Transaksi <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="general_elements.html">Entry Mata Kuliah</a></li>
-                      <li><a href="media_gallery.html">Cetak Jadwal Kuliah</a></li>
+                      <li><a href="index.php?page=jadwal">Entry Mata Kuliah</a></li>
+                      <li><a href="index.php?page=cetak_jadwal">Cetak Jadwal Kuliah</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-table"></i> Laporan <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="tables.html">Cetak Laporan Jadwal</a></li>
+                      <li><a href="index.php?page=cetak_laporan_jadwal">Cetak Laporan Jadwal</a></li>
                     </ul>
                   </li>
                   <li class="nav child_menu">

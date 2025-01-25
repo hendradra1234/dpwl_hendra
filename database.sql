@@ -27,6 +27,7 @@ CREATE TABLE hasil (
     id_jadwal VARCHAR(5),
     id_mapel VARCHAR(5),
     hari VARCHAR(15),
+    waktu VARCHAR(15),
     kelas VARCHAR(5)
 );
 
